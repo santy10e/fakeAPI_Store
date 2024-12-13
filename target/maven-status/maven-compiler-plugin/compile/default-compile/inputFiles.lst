@@ -1,0 +1,11 @@
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/CorsConfig.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/FakeStoreApplication.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/controller/CategoryController.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/controller/ProductController.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/model/Category.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/model/JsonToListConverter.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/model/Product.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/repository/CategoryRepository.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/repository/ProductRepository.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/service/CategoryService.java
+/Users/santiagotene/Documents/ProyectosVsc/fakeApi/demo/src/main/java/com/fakestore/service/ProductService.java

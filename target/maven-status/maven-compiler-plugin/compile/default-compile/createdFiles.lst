@@ -1,0 +1,7 @@
+com/fakestore/controller/ProductController.class
+com/fakestore/model/Product.class
+com/fakestore/repository/CategoryRepository.class
+com/fakestore/FakeStoreApplication.class
+com/fakestore/repository/ProductRepository.class
+com/fakestore/service/ProductService.class
+com/fakestore/model/Category.class
