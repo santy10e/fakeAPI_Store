@@ -20,6 +20,11 @@ public class ProductService {
         return productRepository.findAll();
     }
 
+    public List<Product> findByTitle(String title) {
+        return productRepository.findByTitleContainingIgnoreCase(title);
+    }
+
+
     public Product findById(Long id) {
         return productRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Product not found"));
@@ -40,34 +45,38 @@ public class ProductService {
             Double price,
             Double price_min,
             Double price_max,
-            Long categoryId
-    ) {
+            Long categoryId) {
         List<Product> products = productRepository.findAll();
 
+        // Filtrar por título
         if (title != null) {
             products = products.stream()
                     .filter(product -> product.getTitle().toLowerCase().contains(title.toLowerCase()))
                     .collect(Collectors.toList());
         }
 
+        // Filtrar por precio exacto
         if (price != null) {
             products = products.stream()
                     .filter(product -> product.getPrice().equals(price))
                     .collect(Collectors.toList());
         }
 
+        // Filtrar por rango de precio
         if (price_min != null && price_max != null) {
             products = products.stream()
                     .filter(product -> product.getPrice() >= price_min && product.getPrice() <= price_max)
                     .collect(Collectors.toList());
         }
 
+        // Filtrar por categoría
         if (categoryId != null) {
             products = products.stream()
                     .filter(product -> product.getCategory().getId().equals(categoryId))
                     .collect(Collectors.toList());
         }
 
+        // Paginación manual
         int start = Math.min(offset, products.size());
         int end = Math.min(start + limit, products.size());
         return products.subList(start, end);
